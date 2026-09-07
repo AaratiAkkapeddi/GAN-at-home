@@ -55,9 +55,13 @@ This converts everything to RGB JPEG, and resizes
 python src/train.py --data data/processed --out runs/my_run --img_size 256
 ```
 
-Leave this running. Check `runs/my_run/samples/` every so often — a new
+Leave this running. Check `runs/my_run/samples/` every so often. A new
 grid image is written every `--sample_every` iterations (default 200) so
-you can watch progress without interrupting training. Stop any time with
+you can watch progress without interrupting training. 
+
+*Also keep in mind how much space you have on your laptop.* Each checkpoint is about 280MB and so you may need to delete older checkpoints to keep your computer going or lower the frequency of checkpoint saving. By default it saves every 1000 checkpoints but you can increase this number using the --ckpt_every flag (i.e. `--ckpt_every 2000` to save every 2000 instead of 1000, saving you space but giving you less of a granular history of training)
+
+Stop any time with
 `Ctrl+C`; it saves a checkpoint before exiting, and you can resume with:
 
 ```bash
