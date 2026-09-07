@@ -1,0 +1,17 @@
+
+#
+# BEFORE INSTALLING, two things:
+#
+# Upgrade pip itself:
+#      pip install --upgrade pip
+#      pip --version    # confirm it actually changed before continuing
+#
+#
+# Then:
+#   pip install -r requirements-export.txt
+#
+#
+
+onnxsim>=0.4.36,<0.5   # newer releases often lack prebuilt wheels and need cmake to build
+onnx2tf>=1.19,<2
+ml_dtypes>=0.5.0       # forces a TensorFlow version compatible with onnx's own requirements

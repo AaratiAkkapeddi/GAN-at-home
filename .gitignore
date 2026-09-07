@@ -1,0 +1,11 @@
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+runs/
+exported/
+web_demo/tfjs_model/
+samples_out/
+__pycache__/
+*.pyc
+.DS_Store
+.venv
