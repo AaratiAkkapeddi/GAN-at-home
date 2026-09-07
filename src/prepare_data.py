@@ -5,8 +5,7 @@ What it does:
   - reads every image in --input
   - fixes phone-photo rotation (EXIF orientation)
   - converts everything to RGB JPEG
-  - resizes so the shorter side is --size pixels (with headroom above your
-    training resolution, since train.py does its own random-crop augmentation)
+  - resizes so the shorter side is --size pixels to make it square
   - skips and reports any file it can't read, instead of crashing
 
 Usage:

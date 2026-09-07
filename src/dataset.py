@@ -27,8 +27,8 @@ class ImageFolderDataset(Dataset):
         self.transform = T.Compose([
             T.Resize(resize_to),
             T.CenterCrop(resize_to),
-            T.RandomCrop(img_size),
-            T.RandomHorizontalFlip(p=0.5),
+            #T.RandomCrop(img_size),
+            #T.RandomHorizontalFlip(p=0.5),
             T.ToTensor(),
             T.Normalize([0.5, 0.5, 0.5], [0.5, 0.5, 0.5]),  # -> pixel range [-1, 1]
         ])
