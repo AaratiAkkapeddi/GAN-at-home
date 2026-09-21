@@ -1,11 +1,7 @@
 """
 train.py -- train the lightweight GAN from scratch on your own image folder.
 
-Example (first, do a quick smoke test):
-    python src/train.py --data data/processed --out runs/smoke_test \
-        --img_size 64 --total_iters 100 --sample_every 20 --ckpt_every 50
-
-Then the real run:
+run:
     python src/train.py --data data/processed --out runs/my_run --img_size 256
 
 Stop any time with Ctrl+C -- a checkpoint is saved before the script exits,

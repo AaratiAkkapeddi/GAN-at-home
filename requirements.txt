@@ -7,6 +7,7 @@
 torch>=2.2
 torchvision>=0.17
 pillow>=10.0
+pillow-heif>=0.16
 numpy>=1.24
 tqdm>=4.66
 

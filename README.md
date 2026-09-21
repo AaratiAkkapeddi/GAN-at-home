@@ -48,6 +48,10 @@ python src/prepare_data.py --input data/raw --output data/processed --size 256
 
 This converts everything to RGB JPEG, and resizes 
 
+If you want to augment your dataset by flipping each image horizontally just add the `--flip-horizontal` flag
+```bash
+python src/prepare_data.py --input data/raw --output data/processed --size 256 --flip_horizontal
+```
 
 ### 3. Train model
 
