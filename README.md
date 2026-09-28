@@ -24,9 +24,13 @@ data/raw/           put your dataset in here
 ## Quick start
 
 ### 1. Set up your environment
+
+Depending on your python setup you may need to replace `python3` with just plain old `python` in the terminal commands throughout this document. You may also need to install python [https://www.python.org/downloads/](https://www.python.org/downloads/)!
+
 In the terminal window -  
 Run: `python3 -m venv .venv`
-Run: `source .venv/bin/activate && pip install -r requirements.txt`
+Run: `source .venv/bin/activate`
+Run: `pip install -r requirements.txt`
 
 ### 2. Add your photos
 
