@@ -20,10 +20,8 @@ class ImageFolderDataset(Dataset):
         if len(self.paths) == 0:
             raise RuntimeError(f"No images found in {root}. Supported extensions: {IMG_EXTS}")
 
-        # Resize a bit larger than the target and random-crop: gives the
-        # model slightly different framing each time it sees an image,
-        # which matters a lot when you only have a few hundred of them.
-        resize_to = int(img_size * 1.15)
+       
+        resize_to = int(img_size)
         self.transform = T.Compose([
             T.Resize(resize_to),
             T.CenterCrop(resize_to),
